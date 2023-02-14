@@ -4,6 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	<title></title>
+	<script src="js/jquery-1.12.3.js"></script>
+	<script src="js/sub_script.js"></script>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 	<style type="text/css">
@@ -15,11 +17,12 @@
 			background-color: #acdeff;
 		}
 
-		P {
+		#title {
 			text-align: center;
 			font-weigth: 900;
 			font-size: 36px;
 			letter-spacing: 8px;
+			padding: 40px;
 		}
 
 		div img {
@@ -49,11 +52,11 @@
 </head>
 
 <body>
-	<P id="title">BI/BX Design Guide</P>
+	<div id="title">BI/BX Design Guide</div> 
 	<div><img src="img/bi_guide.jpg"></div>
 	<ul class="btn">
-		<li><a href="#title"><img src="img/top.png" alt="top"></a></li>
-		<li><a href="../../index.html#branding"><img src="img/back.png" alt="top"></a></li>
+		<li class="top"><a href="#title"><img src="img/top.png" alt="top"></a></li>
+		<li><a href="../../index.html#branding" onclick="window.close()"><img src="img/back.png" alt="back"></a></li>
 	</ul>
 </body>
 
