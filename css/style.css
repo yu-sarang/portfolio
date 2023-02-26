@@ -35,6 +35,7 @@ body {
 	font-family: 'GoyangDeogyang';
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
+	background-color: #fff
 }
 
 a{color:#000;}
@@ -76,8 +77,7 @@ h6 {
 
 p {
 	font-size: 13px;
-	color: #242424;
-	line-height: 2;
+	color: #545454;
 }
 
 img {
@@ -117,7 +117,7 @@ Helper CSS
 
 .set-bg {
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 80%;
 	background-position: center center;
 }
 
@@ -468,6 +468,7 @@ Main Site warp
 .main-site-warp.push-side .header-section {
 	-webkit-transform: translateX(614px);
 	transform: translateX(614px);
+	
 }
 
 .main-site-warp.push-side .site-content-warp {
@@ -582,6 +583,7 @@ body.push-side #ascrail2000-hr {
 	transform: translateX(0);
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
+	text-align: left;
 }
 .header-section h2{font-size:42px;}
 
@@ -597,7 +599,7 @@ body.push-side #ascrail2000-hr {
 }
 
 .site-content-warp {
-	position: relative;
+ofile	position: relative;
 	height: 100%;
 	padding-top: 91px;
 	padding-left: 614px;
@@ -629,11 +631,14 @@ body.push-side #ascrail2000-hr {
 
 .about-info {
 	margin-bottom: 80px;
+	text-align: center;
 }
 
 .about-info .greeting{
+	padding-top: 40px;
 	font-size:15px;
-	padding-bottom:15px;
+	padding-bottom:0px;
+	
 }
 
 .about-info .profile {	
@@ -650,7 +655,10 @@ body.push-side #ascrail2000-hr {
 	font-weight:bold;
 }
 
-.about-info .d_icon{margin:-15px 0 0;}
+.about-info .d_icon{
+	margin: 30px;
+
+}
 
 .about-info ul li{
 	display:inline-block;
@@ -820,7 +828,7 @@ Blog page
 }
 
 .blog-thumb {
-	height: 566px;
+	height: 450px;
 }
 
 
@@ -834,9 +842,9 @@ Blog page
 
 .blog-content {
 	width: calc(100% - 138px);
-	background: #fff;
+	background: #ffffff;
 	padding: 55px 58px;
-	margin-top: -133px;
+	margin-top: 0px;
 	margin-left: 62px;
 }
 
@@ -1021,6 +1029,22 @@ Contact page
 /* ----------------
 Responsive
  ---------------------*/
+ @media only screen and (min-width: 1201px){
+	.infobg{
+		background-image: url(../img/bg1-1.jpg);
+		background-position:top center;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		padding-bottom: 20px;
+	}
+	.skills{
+		padding-top: 17px;
+	}
+	.about-info .d_icon{
+		margin-top: -22px;
+	}
+}
+
 
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
 	.main-sidebar,
@@ -1034,7 +1058,7 @@ Responsive
 		padding-left: 450px;
 	}
 	.main-sidebar .mb-warp {
-		padding: 110px 40px 91px 50px;
+		padding: 110px 30px 91px 30px;
 	}
 	.portfolio-item .pi-info {
 		padding: 15px 0 10px 0;
@@ -1046,6 +1070,12 @@ Responsive
 	.nicescroll-rails.nicescroll-rails-hr,
 	#ascrail2000-hr {
 		max-width: calc(100% - 550px);
+	}
+	.infobg{
+		background-image: url(../img/bg1-1.jpg);
+		background-position: top  center;
+		background-size: 375px;
+		background-repeat: no-repeat;
 	}
 }
 
@@ -1097,6 +1127,20 @@ Responsive
 	#ascrail2000-hr {
 		max-width: calc(100% - 450px);
 	}
+	.infobg{
+		background-image: url(../img/bg1.png);
+		background-position:top center;
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+	.skills{
+		margin-top: 50px;
+		margin-bottom: 0px;
+	}
+	.about-info .d_icon{
+		margin: 0px;
+	
+	}
 }
 
 /* Tablet :768px. */
@@ -1111,7 +1155,7 @@ Responsive
 	}
 	.main-sidebar {
 		position: relative;
-		width: 100%;
+		width: 90%;
 		height: auto;
 	}
 	.video-section {
@@ -1146,11 +1190,25 @@ Responsive
 	#ascrail2000-hr {
 		max-width: calc(100% - 50px);
 	}
+	.infobg{
+		background-image: url(../img/bg1-1.jpg);
+		background-position:top center;
+		background-size: 380px;
+		background-repeat: no-repeat;
+		padding-bottom: 50px;
+	}
+	.skills{
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	.about-info .d_icon{
+		margin: 0px;
+	}
 }
 
 /* Large Mobile :480px. */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
 	.site-content-warp {
 		padding-left: 0;
 		height: auto;
@@ -1192,7 +1250,7 @@ Responsive
 		height: auto;
 	}
 	.main-sidebar .mb-warp {
-		padding: 100px 30px 50px;
+		padding: 100px 22px 0px;
 		max-width: 420px;
 		margin: 0 auto;
 	}
@@ -1256,6 +1314,21 @@ Responsive
 		background: #242424;
 		margin: 0 5px;
 	}
+	.infobg{
+		background-image: url(../img/bg1.png);
+		background-position:top center;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		padding-bottom: 20px;
+	}
+	.skills{
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+	p{
+		padding-bottom: 23px;
+	}
 }
 
 /*추가*/
@@ -1312,4 +1385,19 @@ Responsive
 	.menu-social a {
 		margin-right: 15px;
 	}
+	.infobg{
+		background-image: url(../img/bg1.png);
+		background-position:top center;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		padding-bottom: 20px;
+	}
+
+
+	p{
+		padding-bottom: 23px;
+	}
 }
+
+
+/*추가한 내용*/
