@@ -1289,7 +1289,7 @@ Responsive
 	.copyright {
 		position: relative;
 		left: 0;
-		bottom: 0px;
+		bottom: -1400px;
 		padding: 60px 15px 50px;
 		text-align: center;
 		width: 100%;
