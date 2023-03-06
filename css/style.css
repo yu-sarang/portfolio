@@ -459,6 +459,7 @@ Main Site warp
 	height: 100%;
 	width: 100%;
 	position: relative;
+
 }
 
 .main-site-warp.push-side {
@@ -583,7 +584,8 @@ body.push-side #ascrail2000-hr {
 	transform: translateX(0);
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
-	text-align: left;
+	text-align: center;
+	margin: 0 auto;
 }
 .header-section h2{font-size:42px;}
 
@@ -828,7 +830,7 @@ Blog page
 }
 
 .blog-thumb {
-	height: 450px;
+	height: 357px;
 }
 
 
@@ -1181,7 +1183,7 @@ Responsive
 	.copyright {
 		position: relative;
 		left: 0;
-		bottom: 0;
+		bottom: -1250px;
 		padding: 60px 15px 50px;
 		text-align: center;
 		width: 100%;
@@ -1208,7 +1210,7 @@ Responsive
 
 /* Large Mobile :480px. */
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 360px) and (max-width: 414px) {
 	.site-content-warp {
 		padding-left: 0;
 		height: auto;
@@ -1287,7 +1289,7 @@ Responsive
 	.copyright {
 		position: relative;
 		left: 0;
-		bottom: 0;
+		bottom: 0px;
 		padding: 60px 15px 50px;
 		text-align: center;
 		width: 100%;
@@ -1299,6 +1301,9 @@ Responsive
 	.blog-content {
 		width: calc(100% - 30px);
 		margin-left: 15px;
+	}
+	.blog-content p{
+		font-size: 14px;
 	}
 	.hero-track .owl-nav {
 		padding-top: 30px;
@@ -1327,7 +1332,7 @@ Responsive
 	}
 
 	p{
-		padding-bottom: 23px;
+		padding-bottom: 20px;
 	}
 }
 
@@ -1345,7 +1350,7 @@ Responsive
 
 /* Small Mobile :320px. */
 
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 320px) {
 	.site-logo {
 		margin-bottom: 50px;
 	}
@@ -1368,7 +1373,7 @@ Responsive
 	.blog-content {
 		width: calc(100% - 10px);
 		margin-left: 5px;
-		padding: 40px 15px;
+		padding: 0px 15px;
 		text-align:center;
 	}
 	.blog-metas .blog-meta {
